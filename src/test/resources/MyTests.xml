@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="My tests" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="iPhone 11">
+        <parameter name="Device" value="iPhone 11"/>
+        <parameter name="platform" value="iOS 15.5"/>
+        <parameter name="udid" value="25386C1B-F972-4ACB-AD62-C9F42C9350D8"/>
+        <parameter name="wdaLocalPort" value="8100"/>
+        <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+        <classes>
+            <class name="tests.myTests.OnboardingTests"/>
+
+        </classes>
+    </test>
+
+    <test name="iPhone 12">
+        <parameter name="Device" value="iPhone 12"/>
+        <parameter name="platform" value="iOS 15.5"/>
+        <parameter name="udid" value="A2075730-8A72-4DC4-AB54-CEEC2C6FDA46"/>
+        <parameter name="wdaLocalPort" value="8101"/>
+        <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+        <classes>
+            <class name="tests.myTests.OnboardingTests"/>
+
+        </classes>
+    </test>
+</suite>

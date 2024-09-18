@@ -1,0 +1,6 @@
+.idea
+target
+allure-results
+.allure
+src/test/java/configs/_global.config.json
+*.iml
